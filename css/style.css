@@ -7,6 +7,7 @@ body{
   margin: 0;
   color: rgb(73, 72, 72);
   text-align: center;
+  width: 100%;
 }
 
 body aside{
@@ -84,7 +85,7 @@ nav{
   text-align: center;
 }
 
-.div1 i{
+.div1 img{
   width: 300px;
   height: 110px;
 }
@@ -126,6 +127,11 @@ nav{
   border-radius: 52px;
   font-size: 25px;
   cursor: pointer ;
+  color: white;
+}
+
+.div2 a{
+  text-decoration: none;
 }
 
 .div2 ul{
@@ -256,12 +262,7 @@ nav{
   background-size: cover;
   opacity: 0.7;
   text-align: center;
-  color: yellow;
   padding-bottom: 0;
-}
-
-.div5>h1{
-  padding-top: 50px;
 }
 
 .div5>p{
@@ -282,7 +283,7 @@ nav{
 .div51 h2{
   background-color: hsl(45, var(--my-s), var(--my-l));
   border-radius: 4px;
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   color: white;
 }
@@ -303,29 +304,23 @@ nav{
   color:hsl(45, var(--my-s), var(--my-l)) ;
 }
 
-.daimaru{
-  display: flex;
-  justify-content: space-around;
-  font-size: 10px;
-  align-items: center;
-}
-
 .maru{
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: hsl(45, var(--my-s), var(--my-l));
   padding:20px ;
+  margin: 0 auto;
 }
 
 .div6> aside{
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .div7{  
   background-color: hsl(300, var(--my-s), 95%);
-  padding: 70px;
+  padding: 0;
 }
 
 .div7 h1{
@@ -417,12 +412,9 @@ nav{
 }
 
 .person{
-  display: flex;
-  padding: 10px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
-
 .person img{
   width: 200px;
   height: 200px;
@@ -444,8 +436,7 @@ nav{
 .div10{
   background-image: url(img/cafe.jpg);
   background-size: cover;
-  color:white;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -559,12 +550,13 @@ nav{
   border: 1px;
   display: inline-block;
   background-color: hsl(45, var(--my-s), var(--my-l));
+  padding: 0;
 }
 
 .tokuten{
   color: white;
   border: 1px solid white;
-  padding: 90px 5% 10px 80px;
+  padding:50px 10px 10px;
   margin-top: -50px;
 }
 
@@ -602,6 +594,10 @@ nav{
 
 .div15 p, .div15 ul{
   text-align: left;
+}
+
+.div15 img{
+  width: 100%;
 }
 
 .div16{
@@ -671,46 +667,59 @@ footer ul li{
 }
 
 
+@media screen and (min-width:400px){
+ .div15 img{
+  width: 80%;
+  height: 80%;
+ }
+ 
+.person{
+  display: flex;
+  padding: 10px;
+}
+ 
+ }
+
 @media screen and (min-width:770px){
   body p,body h3,body h2,body h1{
    font-size: 1.5em;
  }
 
  body>div{
-   padding-left: 20%;
-   padding-right: 20%;
+   padding-left: 10%;
+   padding-right: 10%;
  }
-
  .nav1{
-   display: flex;
-   padding-left: 50px;
- }
+  display: flex;
+  padding-left: 50px;
+}
 .nav1 h1{
-   order: 1;
- }
+  order: 1;
+}
 .nav1 img{
-  width: 150px;
-  height: 50px;
-  margin-left: 20px;
+ width: 150px;
+ height: 50px;
+ margin-left: 20px;
 }
 .nav2{
-  margin-right: 20px;
-  border-radius: 15px;
-  height: 20px;
-  align-self: center;
+ margin-right: 20px;
+ border-radius: 15px;
+ height: 20px;
+ align-self: center;
 }
 .nav2:hover{
-  background-color:  hsl(0, 90%, var(--my-l));
+ background-color:  hsl(0, 90%, var(--my-l));
 }
 #icon1,.nav2 p{
-  display: none;
+ display: none;
 }
 .nav2 aside{
-  display: inline-block;
-  font-size: 15px;
-  align-items: center;
-  color: white;
+ display: inline-block;
+ font-size: 15px;
+ align-items: center;
+ color: white;
 }
+
 
 .div6{
   padding-left: 10%;
@@ -720,15 +729,6 @@ footer ul li{
 .div6 p{
   font-size: 12px;
 }
-
- .div7 .mdai{
-   display: flex;
-   justify-content: space-around;
- }
- .div7 .mdai .manabu p{
-   padding: 16px;
-   font-size: 15px;
- }
 
  .daiprofile1,.daiprofile2{
    display: flex;
@@ -771,6 +771,13 @@ footer ul li{
   top: 40%;
   left: 0%;
 }
+
+.sougyousya{
+  display: flex;
+}
+.sougyousya>img{
+  margin-right: 20px;
+}
 .div17, .div16{
   padding-left: 120px;
   padding-right: 120px;
@@ -778,4 +785,23 @@ footer ul li{
 footer aside{
   font-size: 1em;
 }
+
+
+.daimaru{
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+  align-items: center;
+}
+@media screen and (min-width:1000px){
+.div7 .mdai{
+  display: flex;
+  justify-content: space-around;
+}
+.div7 .mdai .manabu p{
+  padding: 16px;
+  font-size: 15px;
+}
+}
+
 }
