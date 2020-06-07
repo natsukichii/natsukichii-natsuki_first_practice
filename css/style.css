@@ -36,6 +36,7 @@ nav{
   position: fixed;
   display: flex;
   top: 0%;
+  z-index: 1;
 }
 
 .nav1 {
@@ -58,16 +59,21 @@ nav{
   padding: 9px 11px;
 }
 
+.nav2 a{
+  text-decoration: none;
+}
+
 .nav2 p{
   font-size: 12px;
   margin-bottom: 0;
   margin-top: 0;
+  color: white;
 }
 
-.nav2 img{
-  width:20px;
-  height: 24px;
+#icon1{
+  color: white;
 }
+
 .nav2 aside{
   display: none;
 }
@@ -78,7 +84,7 @@ nav{
   text-align: center;
 }
 
-.div1 img{
+.div1 i{
   width: 300px;
   height: 110px;
 }
@@ -241,6 +247,10 @@ nav{
   display: inline-block;
 }
 
+.icon2{
+  font-size: 30px;
+}
+
 .div5{
   background-image: url(img/computer.jpeg);
   background-size: cover;
@@ -298,7 +308,6 @@ nav{
   justify-content: space-around;
   font-size: 10px;
   align-items: center;
-
 }
 
 .maru{
@@ -360,6 +369,10 @@ nav{
   margin-top: -60px;
   margin-bottom: 100px;
   padding-top: 60px;
+}
+
+.profile>p{
+  font-size: 15px;
 }
 
 .div91{
@@ -494,10 +507,11 @@ nav{
 .acd-label:after{
   background: #00479d;
   box-sizing: border-box;
-  content: '\f067';
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0c9";
+  font-weight: 900;
   display: block;
-  font-family: "Font Awesome 5 Free";
-  height: 52px;
+  height: 43px;
   padding: 10px 20px;
   position: absolute;
   right: 0;
@@ -688,13 +702,23 @@ footer ul li{
 .nav2:hover{
   background-color:  hsl(0, 90%, var(--my-l));
 }
-.nav2 img,.nav2 p{
+#icon1,.nav2 p{
   display: none;
 }
 .nav2 aside{
   display: inline-block;
   font-size: 15px;
   align-items: center;
+  color: white;
+}
+
+.div6{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.div6 p{
+  font-size: 12px;
 }
 
  .div7 .mdai{
